@@ -1,0 +1,114 @@
+/* 1. Reset básico e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Fundo azul escuro moderno */
+    color: #f8fafc; /* Texto claro */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2. Cabeçalho */
+header {
+    padding: 20px 10%;
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+header h2 {
+    color: #38bdf8; /* Azul claro em destaque */
+    font-size: 1.5rem;
+}
+
+/* 3. Seção Principal (Hero) */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+section {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.125rem;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+/* 4. Botão do WhatsApp Estilizado */
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #22c55e; /* Verde do WhatsApp */
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #16a34a; /* Verde mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito sutil de elevação */
+}
+
+/* 5. Lista de Benefícios */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #1e293b;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border-left: 4px solid #38bdf8;
+    text-align: left;
+}
+
+/* 6. Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #020617;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* 7. Responsividade para Celular */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        width: 100%; /* Botão ocupa a largura toda na tela do celular */
+    }
+}
